@@ -88,36 +88,3 @@ Ye project **GNU General Public License v3.0 (GPL-3.0)** ke under protected hai.
 </p>
 ```
 
----
-
-### 2. `LICENSE` File Content
-*(Aapne copy-paste se bachne ke liye strong license manga tha, toh **GPL-3.0** sabse best hai. Agar koi aapka code churate huye pakda gaya, toh use apna app open-source karna padega aur aapka credit dena compulsary ho jayega).*
-
-App ki root directory me `LICENSE` naam se file banakar ye daal do:
-
-```text
-GNU GENERAL PUBLIC LICENSE
-Version 3, 29 June 2007
-
-Copyright (C) 2026 SR7 MODS <com.needed.books>
-
-Everyone is permitted to copy and distribute verbatim copies
-of this license document, but changing it is not allowed.
-
-Preamble
-
-The GNU General Public License is a free, copyleft license for
-software and other kinds of works.
-
-When we speak of free software, we are referring to freedom, not
-price. Our General Public Licenses are designed to make sure that you
-have the freedom to distribute copies of free software (and charge for
-them if you wish), that you receive source code or can get it if you
-want it, that you can change the software or use pieces of it in new
-free programs, and that you know you can do these things.
-
-If you modify this program, or any portion of it, or copy code from it,
-you MUST release your modifications under the same GPL-3.0 License, and
-you MUST retain the original author copyright notice: SR7 MODS.
-
-For full license details, visit: https://www.gnu.org/licenses/gpl-3.0.html
