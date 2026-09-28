@@ -1,44 +1,43 @@
 name: Unzip Code and Commit to Main
 
 on:
-  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   unzip-and-push:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Repo Checkout
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
 
-      # 2. Check if code.zip exists & Unzip
       - name: Unzip code.zip
         run: |
           if [ -f "code.zip" ]; then
             echo "Extracting code.zip..."
             unzip -o code.zip -d .
-            rm code.zip
+            rm -f code.zip
           else
-            echo "Error: code.zip not found in the root directory!"
+            echo "Error: code.zip not found in the repository root!"
             exit 1
           fi
 
-      # 3. Commit and Push back to main
-      - name: Commit and Push extracted files
+      - name: Commit and push extracted files
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
+
           git add .
-          
-          # Check if there are any changes to commit
-          if git diff --staged --quiet; then
+
+          if git diff --cached --quiet; then
             echo "No changes detected after unzipping."
           else
-            git commit -m "Unzip code.zip and update repository files [skip ci]"
+            git commit -m "Unzip code.zip and push extracted files [skip ci]"
             git push origin main
           fi
