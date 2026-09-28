@@ -20,12 +20,12 @@
 
 ## 🌟 Key Features
 
-* **🎨 Glassy & Modern UI**: Pure XML drawables dwara design kiya gaya Dark Mode UI aur Glassmorphic Notice Dialog.
-* **⚡ High-Performance Engine**: Memory-managed native `ListView` rendering, jisse badi PDF files bina kisi lag ke smoothly scroll hoti hain.
-* **📥 Dynamic Download Overlay**: Real-time download progress bar ke saath downloading speed (KB/s ya MB/s) aur file size tracker.
-* **🌙 Dark / Light Mode Toggle**: PDF reader view ke andar single-tap layout color inverter.
-* **🗂️ Interactive Side Drawer**: Social links, Developer Portfolio, Telegram channel aur Support options.
-* **⚠️ Custom Notice Dialog**: App opening notice with "Don't Show Again" preference state check.
+* **🎨 Glassy & Modern UI**: Dark Mode UI and Glassmorphic Notice Dialog designed purely with XML drawables.
+* **⚡ High-Performance Engine**: Memory-managed native `ListView` rendering that allows large PDF files to scroll smoothly without any lag.
+* **📥 Dynamic Download Overlay**: File size tracker with real-time download progress bar and speed display (KB/s or MB/s).
+* **🌙 Dark / Light Mode Toggle**: Single-tap layout color inverter inside the PDF reader view.
+* **🗂️ Interactive Side Drawer**: Social links, Developer Portfolio, Telegram channel, and Support options.
+* **⚠️ Custom Notice Dialog**: App opening notice featuring a "Don't Show Again" preference state check.
 
 ---
 
@@ -67,7 +67,7 @@ NeededBooks/
 
 ```
 ## ⚡ How to Build (Termux / CLI)
-Agra aap Termux ya Terminal se build karna chahte hain:
+If you want to build using Termux or Terminal:
 ```bash
 # Clean previous build caches
 ./gradlew clean
@@ -79,12 +79,11 @@ Agra aap Termux ya Terminal se build karna chahte hain:
 Generated APK location:
 app/build/outputs/apk/release/app-release.apk
 ## 🔒 License & Copyright
-Ye project **GNU General Public License v3.0 (GPL-3.0)** ke under protected hai.
- * **Strict Requirement**: Koi bhi is code ko commercial project me bina source code public kiye ya original copyright credit (**SR7 MODS**) hataye reuse/copy-paste nahi kar sakta.
+This project is protected under the **GNU General Public License v3.0 (GPL-3.0)**.
+ * **Strict Requirement**: Anyone reusing or copying code from this project cannot use it in commercial projects without making the source code public or removing the original copyright credit (**SR7 MODS**).
 ## 👨‍💻 Developer Support
 <p align="left">
 <a href="https://t.me/sr7mods"><img src="https://img.shields.io/badge/Telegram-@sr7mods-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
 <a href="https://github.com/sr7mods"><img src="https://img.shields.io/badge/GitHub-SR7--Mods-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
 </p>
 ```
-
