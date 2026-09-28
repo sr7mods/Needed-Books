@@ -8,7 +8,7 @@
 <p>
   <a href="https://github.com/sr7mods"><img src="https://img.shields.io/badge/Language-Kotlin%2070%25%20%7C%20XML%2030%25-007ACC?style=for-the-badge&logo=java&logoColor=white" alt="Languages"></a>
   <a href="https://developer.android.com/"><img src="https://img.shields.io/badge/Platform-Android%20Native-3DDC84?style=for-the-badge&logo=android&logoColor=black" alt="Android Platform"></a>
-  <a href="https://m3.material.io/"><img src="https://img.shields.io/badge/UI-Glassmorphism%20%7C%20Dark-00B0FF?style=for-the-badge&logo=material-design&logoColor=white" alt="UI Style"></a>
+  <a href="https://m3.material.io/"><img src="https://img.shields.io/badge/UI-Glassmorphism%20%7C%20Dark%20%7C%20Green-00B0FF?style=for-the-badge&logo=material-design&logoColor=white" alt="UI Style"></a>
   <a href="https://firebase.google.com/"><img src="https://img.shields.io/badge/Backend-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase Backend"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPL--3.0-FF1744?style=for-the-badge&logo=gnu&logoColor=white" alt="License GPL 3.0"></a>
   <a href="https://t.me/sr7mods"><img src="https://img.shields.io/badge/Dev-SR7%20Mods-00E676?style=for-the-badge&logo=github&logoColor=black" alt="Developer Handle"></a>
