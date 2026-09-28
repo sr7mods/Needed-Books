@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Needed Books</string>
+    <string name="app_subtitle">Offline Book Library &amp; Reader</string>
+    <string name="header_library">NEEDED BOOKS</string>
+    <string name="header_path_root">/ Library</string>
+    
+    <!-- Search & Filters -->
+    <string name="search_hint">Search books, authors, folders...</string>
+    
+    <!-- Empty & Loading states -->
+    <string name="loading_connecting">Connecting to Firebase...</string>
+    <string name="empty_title">No books or folders found</string>
+    <string name="empty_subtitle">Tap refresh to load books from Firebase or check internet</string>
+    <string name="btn_refresh">REFRESH LIBRARY</string>
+    <string name="downloading_book">Downloading book...</string>
+    <string name="download_completed">Download complete! Opening reader...</string>
+    
+    <!-- Drawer Sections -->
+    <string name="drawer_lead_dev">Developer</string>
+    <string name="drawer_social_profiles">COMMUNITY &amp; SOCIAL</string>
+    <string name="drawer_settings_help">SETTINGS &amp; HELP</string>
+    <string name="menu_fb">Facebook Profile</string>
+    <string name="menu_tg">Telegram</string>
+    <string name="menu_wa">WhatsApp</string>
+    <string name="menu_portfolio">Dev Portfolio</string>
+    <string name="menu_share_app">Share App</string>
+    <string name="menu_source_code">Source Code (GitHub)</string>
+    <string name="menu_github_profile">GitHub (@sr7mods)</string>
+    <string name="menu_language">Language</string>
+    <string name="menu_manage_cache">Manage Downloaded Cache</string>
+    <string name="menu_instructions">Instructions</string>
+    
+    <!-- Language Dialog -->
+    <string name="dialog_language_title">Select Language</string>
+    <string name="dialog_language_subtitle">Choose your preferred app language</string>
+    <string name="lang_english">English</string>
+    <string name="lang_bangla">বাংলা</string>
+    <string name="btn_apply">APPLY</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_close">CLOSE</string>
+    <string name="btn_got_it">GOT IT</string>
+    
+    <!-- Cache Dialog -->
+    <string name="cache_dialog_title">Downloaded Books Cache</string>
+    <string name="cache_empty">No downloaded books found</string>
+    <string name="cache_clear_all">CLEAR ALL CACHE</string>
+    
+    <!-- Instructions Dialog -->
+    <string name="instructions_subtitle">Instructions &amp; User Guide</string>
+    <string name="instructions_browsing">📖  Browsing &amp; Searching\nTap any folder to explore its subdirectories. Use the top search bar to quickly find books by title or author.</string>
+    <string name="instructions_navigation">📁  Folder Navigation\nTap the back arrow or breadcrumb bar at the top to move back up to parent directories anytime.</string>
+    <string name="instructions_offline">📥  Offline Reading &amp; Cache\nTap any book to open or download. Downloaded books stay saved offline until you delete them in \'Manage Downloaded Cache\'.</string>
+    <string name="instructions_reading">👓  Reading Features\nUse the viewer toolbar to toggle between Vertical Scroll and Horizontal Page modes, jump to specific pages, or turn on eye-friendly Night Mode.</string>
+    <string name="instructions_contact_dev">📩  Need Any Specific Book?\nIf you need any book, course material, or novel that is not available yet, feel free to contact the developer directly via Telegram, WhatsApp, or Facebook to get it added to the library!</string>
+
+    <!-- About Dev Dialog -->
+    <string name="about_dev_subtitle">About the Developer</string>
+    <string name="about_dev_bio">Hey, this is 𝐒𝐑𝟕 𝐌𝐨𝐝𝐬.\n\nI am an Honours student at Kurigram Govt. College, Department of Bangla.\n\nI am an Android Developer and Reverse Engineer.\n\nI like building and modding Android apps, web development, ethical security research, and building root/non-root modules.\n\nYou can contact me for any help or collaboration. Thanks!</string>
+
+    <!-- PDF Reader -->
+    <string name="night_mode_on">Night Mode: ON</string>
+    <string name="night_mode_off">Night Mode: OFF (Light)</string>
+    <string name="menu_bookmarks">Bookmarks</string>
+    <string name="bookmark_this_page">Bookmark this page</string>
+    <string name="remove_bookmark">Remove bookmark</string>
+    <string name="no_bookmarks">No bookmarks saved yet</string>
+</resources>

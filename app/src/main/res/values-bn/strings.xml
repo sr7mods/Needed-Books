@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Needed Books</string>
+    <string name="app_subtitle">অফলাইন বই লাইব্রেরি ও রিডার</string>
+    <string name="header_library">NEEDED BOOKS</string>
+    <string name="header_path_root">/ লাইব্রেরি</string>
+    
+    <!-- Search & Filters -->
+    <string name="search_hint">বই, লেখক বা ফোল্ডার খুঁজুন...</string>
+    
+    <!-- Empty & Loading states -->
+    <string name="loading_connecting">লাইব্রেরি লোড হচ্ছে...</string>
+    <string name="empty_title">কোনো বই বা ফোল্ডার পাওয়া যায়নি</string>
+    <string name="empty_subtitle">ইন্টারনেট সংযোগ পরীক্ষা করুন বা রিফ্রেশ বাটনে ট্যাপ করুন</string>
+    <string name="btn_refresh">লাইব্রেরি রিফ্রেশ করুন</string>
+    <string name="downloading_book">বই ডাউনলোড হচ্ছে...</string>
+    <string name="download_completed">ডাউনলোড সম্পন্ন! রিডার খোলা হচ্ছে...</string>
+    
+    <!-- Drawer Sections -->
+    <string name="drawer_lead_dev">ডেভেলপার</string>
+    <string name="drawer_social_profiles">কমিউনিটি ও সোশ্যাল</string>
+    <string name="drawer_settings_help">সেটিংস ও সহায়তা</string>
+    <string name="menu_fb">ফেসবুক প্রোফাইল</string>
+    <string name="menu_tg">টেলিগ্রাম</string>
+    <string name="menu_wa">হোয়াটসঅ্যাপ</string>
+    <string name="menu_portfolio">ডেভেলপার পোর্টফোলিও</string>
+    <string name="menu_share_app">অ্যাপ শেয়ার করুন</string>
+    <string name="menu_source_code">সোর্স কোড (গিটহাব)</string>
+    <string name="menu_github_profile">গিটহাব (@sr7mods)</string>
+    <string name="menu_language">ভাষা</string>
+    <string name="menu_manage_cache">ডাউনলোডকৃত ক্যাচ ফাইল</string>
+    <string name="menu_instructions">ব্যবহারের নিয়মাবলী</string>
+    
+    <!-- Language Dialog -->
+    <string name="dialog_language_title">ভাষা নির্বাচন করুন</string>
+    <string name="dialog_language_subtitle">অ্যাপের জন্য আপনার পছন্দের ভাষা বেছে নিন</string>
+    <string name="lang_english">English</string>
+    <string name="lang_bangla">বাংলা</string>
+    <string name="btn_apply">প্রয়োগ করুন</string>
+    <string name="btn_cancel">বাতিল</string>
+    <string name="btn_close">বন্ধ করুন</string>
+    <string name="btn_got_it">বুঝেছি</string>
+    
+    <!-- Cache Dialog -->
+    <string name="cache_dialog_title">সংরক্ষিত বইসমূহ</string>
+    <string name="cache_empty">কোনো সংরক্ষিত বই নেই</string>
+    <string name="cache_clear_all">সব ক্যাশ মুছুন</string>
+    
+    <!-- Instructions Dialog -->
+    <string name="instructions_subtitle">ব্যবহারের নিয়মাবলী ও নির্দেশিকা</string>
+    <string name="instructions_browsing">📖  অনুসন্ধান ও ব্রাউজিং\nসাবডিরেক্টরি দেখতে যেকোনো ফোল্ডারে ট্যাপ করুন। শিরোনাম বা লেখক অনুযায়ী বই খুঁজতে ওপরের সার্চ বার ব্যবহার করুন।</string>
+    <string name="instructions_navigation">📁  ফোল্ডার নেভিগেশন\nপূর্ববর্তী ফোল্ডারে ফিরে যেতে ওপরে থাকা ব্যাক অ্যারো বা ব্রেডক্রাম্ব বারে ট্যাপ করুন।</string>
+    <string name="instructions_offline">📥  অফলাইন পড়া ও ক্যাশ\nবই পড়তে বা ডাউনলোড করতে ট্যাপ করুন। ডাউনলোড করা বই অফলাইনে সংরক্ষিত থাকবে যতক্ষণ না আপনি ক্যাশ থেকে মুছেন।</string>
+    <string name="instructions_reading">👓  পড়ার সুবিধাসমূহ\nভিউয়ার টুলবার থেকে উল্লম্ব বা অনুভূমিক পেজ মোড পরিবর্তন করুন, নির্দিষ্ট পাতায় জাম্প করুন বা নাইট মোড চালু করুন।</string>
+    <string name="instructions_contact_dev">📩  যেকোনো বইয়ের প্রয়োজনে\nআপনার প্রয়োজনীয় কোনো বই বা সিলেবাসের বই অ্যাপে না পাওয়া গেলে, লাইব্রেরিতে যুক্ত করার জন্য সরাসরি টেলিগ্রাম, হোয়াটসঅ্যাপ বা ফেসবুকে ডেভেলপারের সাথে যোগাযোগ করুন!</string>
+
+    <!-- About Dev Dialog -->
+    <string name="about_dev_subtitle">ডেভেলপার পরিচিতি</string>
+    <string name="about_dev_bio">আসসালামু আলাইকুম, আমি 𝐒𝐑𝟕 𝐌𝐨𝐝𝐬।\n\nআমি কুড়িগ্রাম সরকারি কলেজের বাংলা বিভাগের একজন অনার্স শিক্ষার্থী।\n\nআমি একজন অ্যান্ড্রয়েড ডেভেলপার এবং রিভার্স ইঞ্জিনিয়ার।\n\nআমি অ্যান্ড্রয়েড অ্যাপস তৈরি ও মোডিং, ওয়েব ডেভেলপমেন্ট, এথিক্যাল সিকিউরিটি রিসার্চ এবং রুট/নন-রুট মডিউল তৈরিতে আগ্রহী।\n\nযেকোনো সহায়তা বা যৌথ কাজের জন্য আমার সাথে যোগাযোগ করতে পারেন। ধন্যবাদ!</string>
+
+    <!-- PDF Reader -->
+    <string name="night_mode_on">নাইট মোড: চালু</string>
+    <string name="night_mode_off">নাইট মোড: বন্ধ (লাইট)</string>
+    <string name="menu_bookmarks">বুকমার্ক</string>
+    <string name="bookmark_this_page">এই পাতা বুকমার্ক করুন</string>
+    <string name="remove_bookmark">বুকমার্ক মুছুন</string>
+    <string name="no_bookmarks">এখনও কোনো বুকমার্ক সংরক্ষণ করা হয়নি</string>
+</resources>
