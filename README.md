@@ -2,14 +2,15 @@
 
 # 📚 Needed Books
 
-**A High-Performance, Lightweight Native Android PDF Reader & Book Manager**
+**A Modern, High-Performance Android PDF Reader & Book Manager**
 
 <!-- GitHub Shields / Badges Card -->
 <p>
-  <a href="https://github.com/sr7mods"><img src="https://img.shields.io/badge/Language-Kotlin%2070%25%20%7C%20XML%2030%25-007ACC?style=for-the-badge&logo=java&logoColor=white" alt="Languages"></a>
+  <a href="https://kotlinlang.org/"><img src="https://img.shields.io/badge/Language-Kotlin%20100%25-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Language Kotlin"></a>
+  <a href="https://developer.android.com/jetpack/compose"><img src="https://img.shields.io/badge/UI-Jetpack%20Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" alt="Jetpack Compose"></a>
   <a href="https://developer.android.com/"><img src="https://img.shields.io/badge/Platform-Android%20Native-3DDC84?style=for-the-badge&logo=android&logoColor=black" alt="Android Platform"></a>
-  <a href="https://m3.material.io/"><img src="https://img.shields.io/badge/UI-Glassmorphism%20%7C%20Dark%20%7C%20Green-00B0FF?style=for-the-badge&logo=material-design&logoColor=white" alt="UI Style"></a>
-  <a href="https://firebase.google.com/"><img src="https://img.shields.io/badge/Backend-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase Backend"></a>
+  <a href="https://m3.material.io/"><img src="https://img.shields.io/badge/Design-Glassmorphic%20%7C%20Dark-00B0FF?style=for-the-badge&logo=material-design&logoColor=white" alt="UI Style"></a>
+  <a href="https://firebase.google.com/"><img src="https://img.shields.io/badge/Backend-Firebase%20REST-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase Backend"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPL--3.0-FF1744?style=for-the-badge&logo=gnu&logoColor=white" alt="License GPL 3.0"></a>
   <a href="https://t.me/sr7mods"><img src="https://img.shields.io/badge/Dev-SR7%20Mods-00E676?style=for-the-badge&logo=github&logoColor=black" alt="Developer Handle"></a>
 </p>
@@ -20,22 +21,26 @@
 
 ## 🌟 Key Features
 
-* **🎨 Glassy & Modern UI**: Dark Mode UI and Glassmorphic Notice Dialog designed purely with XML drawables.
-* **⚡ High-Performance Engine**: Memory-managed native `ListView` rendering that allows large PDF files to scroll smoothly without any lag.
-* **📥 Dynamic Download Overlay**: File size tracker with real-time download progress bar and speed display (KB/s or MB/s).
-* **🌙 Dark / Light Mode Toggle**: Single-tap layout color inverter inside the PDF reader view.
-* **🗂️ Interactive Side Drawer**: Social links, Developer Portfolio, Telegram channel, and Support options.
-* **⚠️ Custom Notice Dialog**: App opening notice featuring a "Don't Show Again" preference state check.
+* **🚀 Upgraded Native PDF Engine**: Powered by `AndroidPdfViewer` with fluid vertical continuous scrolling, double-tap multi-level zooming, and anti-aliasing.
+* **🔖 Smart Bookmark Manager**: Save any book page instantly with single-tap bookmarking, browse saved bookmarks in a glass dialog, and jump directly to any bookmark.
+* **⏩ Quick Jump to Page**: Jump to any target page seamlessly via direct number input or interactive slider.
+* **🌙 Color Inversion Dark Mode**: Hardware-accelerated color matrix inverter specifically tuned for reading white documents comfortably at night without eye strain.
+* **📊 Comprehensive Download Overlay**: Real-time progress tracking with percentage, live transfer speeds, downloaded size, total file size (`Downloaded / Actual Size`), and remaining size display.
+* **🎨 Glassmorphic & Modern UI**: Sleek Material 3 dark-themed interface built entirely with declarative Jetpack Compose.
+* **🗂️ Smooth Scrolling Navigation Drawer**: Developer portfolio, community links (Telegram, WhatsApp, Facebook), language selector (English / Bangla), cache cleaner, and instructions.
+* **🧹 Lightweight & Optimized**: Unused legacy dependencies and deprecated architectures stripped out, reducing APK footprint and memory overhead.
 
 ---
 
-## 📊 Language & Tech Stack Breakdown
+## 📊 Tech Stack Breakdown
 
-| Technology | Usage Ratio | Role |
+| Layer | Technology | Details |
 | :--- | :--- | :--- |
-| **Java** | `60%` | Application logic, PDF rendering, file downloading & Firebase management |
-| **XML** | `40%` | Custom UI components, Glassmorphism layouts, vector icons & drawables |
-| **Kotlin / Jetpack Compose** | `0%` | Not used (Pure Native Android Architecture) |
+| **Language** | **Kotlin (100%)** | Modern, idiomatic Kotlin coroutines, flows, and type safety |
+| **UI Framework** | **Jetpack Compose (M3)** | Declarative UI, glassmorphism styling, fluid animations, custom modals |
+| **PDF Rendering** | **AndroidPdfViewer (Pdfium)** | Native C++ Pdfium-backed vector decoding, double-tap zoom & pinch gestures |
+| **Networking** | **HttpURLConnection & Coroutines** | Resilient background file streaming with chunked byte-size calculations |
+| **Backend & Sync** | **Firebase REST** | Dynamic catalog fetch with local caching and offline cache management |
 
 ---
 
@@ -47,43 +52,29 @@ NeededBooks/
 │   ├── src/
 │   │   └── main/
 │   │       ├── java/com/needed/books/
-│   │       │   ├── MainActivity.java
-│   │       │   └── NativePdfActivity.java
+│   │       │   ├── MainActivity.kt          # Application entry point & theme initialization
+│   │       │   ├── NativePdfActivity.kt     # Dedicated PDF reader activity container
+│   │       │   ├── BookModel.kt             # Data models & Firebase JSON parser
+│   │       │   ├── LocaleHelper.kt          # Dynamic language switching (EN / BN)
+│   │       │   ├── data/
+│   │       │   │   └── BookRepository.kt    # Firebase fetch, caching, and stream downloader
+│   │       │   ├── pdf/
+│   │       │   │   └── PdfViewerScreen.kt   # PDFView compose integration, bookmarks, night mode & jump
+│   │       │   ├── security/
+│   │       │   │   └── SecurityVault.kt     # Secure app configuration
+│   │       │   └── ui/
+│   │       │       ├── MainScreen.kt        # Book grid/list, sidebar drawer, download overlay & dialogs
+│   │       │       └── theme/               # Color palette, Material3 theme & typography
 │   │       ├── res/
-│   │       │   ├── drawable/
-│   │       │   │   ├── btn_glass_primary.xml
-│   │       │   │   ├── btn_glass_secondary.xml
-│   │       │   │   ├── custom_progress_bar.xml
-│   │       │   │   ├── drawer_glass_bg.xml
-│   │       │   │   └── glass_dialog_bg.xml
-│   │       │   └── layout/
-│   │       │       ├── activity_main.xml
-│   │       │       ├── activity_native_pdf.xml
-│   │       │       ├── book_item.xml
-│   │       │       └── dialog_glass_notice.xml
+│   │       │   ├── values/                  # Strings, colors, and base themes
+│   │       │   ├── values-bn/               # Full Bengali localization resources
+│   │       │   └── drawable/                # Optimized vector icons and visual assets
 │   │       └── AndroidManifest.xml
+│   ├── build.gradle.kts
+│   └── proguard-rules.pro
+├── gradle/
+│   └── libs.versions.toml
+├── build.gradle.kts
+├── settings.gradle.kts
 ├── LICENSE
 └── README.md
-
-```
-## ⚡ How to Build (Termux / CLI)
-If you want to build using Termux or Terminal:
-```bash
-# Clean previous build caches
-./gradlew clean
-
-# Assemble Release APK
-./gradlew assembleRelease
-
-```
-Generated APK location:
-app/build/outputs/apk/release/app-release.apk
-## 🔒 License & Copyright
-This project is protected under the **GNU General Public License v3.0 (GPL-3.0)**.
- * **Strict Requirement**: Anyone reusing or copying code from this project cannot use it in commercial projects without making the source code public or removing the original copyright credit (**SR7 MODS**).
-## 👨‍💻 Developer Support
-<p align="left">
-<a href="https://t.me/sr7mods"><img src="https://img.shields.io/badge/Telegram-@sr7mods-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-<a href="https://github.com/sr7mods"><img src="https://img.shields.io/badge/GitHub-SR7--Mods-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
-</p>
-```
