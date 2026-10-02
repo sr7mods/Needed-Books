@@ -25,10 +25,19 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
 
+      - name: Create dummy env & google-services files
+        run: |
+          touch .env.example
+          touch .env
+          mkdir -p app
+          echo '{"project_info":{"project_number":"000000000000","project_id":"dummy","storage_bucket":"dummy.appspot.com"},"client":[{"client_info":{"mobilesdk_app_id":"1:000000000000:android:0000000000000000","android_client_info":{"package_name":"com.needed.books"}},"api_key":[{"current_key":"dummy"}],"services":{"appinvite_service":{"other_platform_oauth_client":[]}}}]}' > app/google-services.json
+
       - name: Build Release APK
         run: gradle assembleRelease
         env:
+          KEYSTORE_PATH: ${{ github.workspace }}/sr7key.jks
           KEYSTORE_FILE: ${{ github.workspace }}/sr7key.jks
+          STORE_PASSWORD: "@sr7mods"
           KEYSTORE_PASSWORD: "@sr7mods"
           KEY_ALIAS: sr7mods
           KEY_PASSWORD: "@sr7mods"
